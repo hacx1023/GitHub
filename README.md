@@ -412,27 +412,33 @@ Ex:
 
 Git Branching Strategy:
 ---------------------------
-'''
-Branching is required when you want to work on a new feature or task or want to keep a backup without disturbing production code,.
+Branching is required when you want to work on a new feature or task or want to keep a backup without disturbing production code.
  
 ```
 To see list of available branches:
-$ git branch
-```` 
+git branch
+```
+
 ```
 To create a new branch :
-$ git branch <branch name>
-```	
+git branch <branch name>
+```
+
 ```
 To switch branch 
-$git checkout <branchname_you_want_to_goto>
+git checkout <branchname_you_want_to_goto>
 ```
-```
+
+
 * Create some new files and check the status and files in both branches
- 
 * To commit the changes to particular branch, 
 * Be in that branch and commit.
-
 * When not committed, the files will be floating in 
 * The entire workspace and will be visible to all
 * Other branches in your local repo.
+
+**How is branch created?**
+* The new branch is always created from the current branch you are working in.
+* When you do git branch, the same working copy of current branch is copied to new branch and now onwards whatever you do in this new branch will be personal to this branch.
+* The new branch will contain all the previous work and your new work. 
+* NEW BRANCH = PARENT_BRANCH_COPY + NEW_WORK 
