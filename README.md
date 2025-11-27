@@ -22,14 +22,14 @@ Install & Configure Git:
 Workflow of Git:
 ------------------------
 
-<img width="800" height="568" alt="image" src="https://github.com/user-attachments/assets/ea01b82f-47f3-40da-ac04-2ee8d36aa305" />
+<img width="400" height="284" alt="image" src="https://github.com/user-attachments/assets/ea01b82f-47f3-40da-ac04-2ee8d36aa305" />
 
 
 Git Lifecycle Explanation
 -------------------------
-Working Directory → (git add) → Staging Area 
-Staging Area → (git commit) → Local Repository 
-Local Repository → (git push) → Remote Repository (GitHub)
+1. Working Directory → (git add) → Staging Area 
+2. Staging Area → (git commit) → Local Repository 
+3. Local Repository → (git push) → Remote Repository (GitHub)
 
 
 
