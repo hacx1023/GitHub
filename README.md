@@ -11,14 +11,13 @@ Setting Up Code Repository in GITHUB:
 
 Install & Configure Git:
 ------------------------
-sudo su
-yum update -y
-yum install git -y
-git --version
-
-git config --global user.name "<region_specific_username>"
-git config --global user.email "<your_email@example.com>"
-git config --list
+1. sudo su
+2. yum update -y
+3. yum install git -y
+4. git --version
+5. git config --global user.name "<region_specific_username>"
+6. git config --global user.email "<your_email@example.com>"
+7. git config --list
 
 Workflow of Git:
 ------------------------
