@@ -410,3 +410,29 @@ Ex:
 ```
 
 
+Git Branching Strategy:
+---------------------------
+'''
+Branching is required when you want to work on a new feature or task or want to keep a backup without disturbing production code,.
+ 
+```
+To see list of available branches:
+$ git branch
+```` 
+```
+To create a new branch :
+$ git branch <branch name>
+```	
+```
+To switch branch 
+$git checkout <branchname_you_want_to_goto>
+```
+```
+* Create some new files and check the status and files in both branches
+ 
+* To commit the changes to particular branch, 
+* Be in that branch and commit.
+
+* When not committed, the files will be floating in 
+* The entire workspace and will be visible to all
+* Other branches in your local repo.
