@@ -33,212 +33,212 @@ Git Lifecycle Explanation
 
 ✅ 1. Basic Git Commands
 ------------------------
-* Initialize a new Git repository
+**Initialize a new Git repository**
 * git init
 
-* Clone a remote repository
+**Clone a remote repository**
 * git clone <repo-url>
 
-* Check file changes in working directory
+**Check file changes in working directory**
 * git status
 
-* Add a specific file to staging area
+**Add a specific file to staging area**
 * git add <file>
 
-* Add all files to staging area
+**Add all files to staging area**
 * git add .
 
-* Commit staged changes with message
+**Commit staged changes with message**
 * git commit -m "message"
 
-* Push commits to remote repository
+**Push commits to remote repository**
 * git push
 
-* Push code to a specific branch
+**Push code to a specific branch**
 * git push origin <branch>
 
-* Pull latest changes from remote repository
+**Pull latest changes from remote repository**
 * git pull
 
-* Download changes without merging
+**Download changes without merging**
 * git fetch
 
-* Show configured remote URLs
+**Show configured remote URLs**
 * git remote -v
 
 ✅ 2. Branching Commands
 ------------------------
-* List all branches
+**List all branches**
 * git branch
 
-* Create a new branch
+**Create a new branch**
 * git branch <branch-name>
 
-* List all local + remote branches
+**List all local + remote branches**
 * git branch -a
 
-* Switch to another branch
+**Switch to another branch**
 * git checkout <branch>
 
-* Create and switch to a new branch
+**Create and switch to a new branch**
 * git checkout -b <branch>
 
-* Modern switch command
+**Modern switch command**
 * git switch <branch>
 * git switch -c <branch>
 
-* Delete branch
+**Delete branch**
 * git branch -d <branch>
 
-* Force delete branch
+**Force delete branch**
 * git branch -D <branch>
 
 ✅ 3. Merge & Rebase
 --------------------
-* Merge another branch into current branch
+**Merge another branch into current branch**
 * git merge <branch>
 
-* Rebase current branch on another branch
+**Rebase current branch on another branch**
 * git rebase <branch>
 
-* Continue rebase after fixing conflicts
+**Continue rebase after fixing conflicts**
 * git rebase --continue
 
-* Abort rebase
+**Abort rebase**
 * git rebase --abort
 
 ✅ 4. Log & History
 -------------------
-* Show full commit history
+**Show full commit history**
 * git log
 
-* Show one-line history
+**Show one-line history**
 * git log --oneline
 
-* Visual graph of branches
+**Visual graph of branches**
 * git log --graph
 
-* Show commit with decorations (branch names, tags)
+**Show commit with decorations (branch names, tags)**
 * git log --decorate
 
-* Show what changed in a specific commit
+**Show what changed in a specific commit**
 * git show
 
 ✅ 5. Stash Commands
 --------------------
-* Save work without committing.
+**Save work without committing.**
 * Save working changes
 * git stash
 
-* Save with message
+**Save with message**
 * git stash save "message"
 
-* List all stash entries
+**List all stash entries**
 * git stash list
 
-* Apply stash but keep it
+**Apply stash but keep it**
 * git stash apply
 
-* Apply stash and remove it
+**Apply stash and remove it**
 * git stash pop
 
-* Delete a specific stash
+**Delete a specific stash**
 * git stash drop
 
-* Clear all stashes
+**Clear all stashes**
 * git stash clear
 
 ✅ 6. Undo Changes
 ------------------
-* Restore file from latest commit
+**Restore file from latest commit**
 * git restore <file>
 
-* Unstage a file
+**Unstage a file**
 * git restore --staged <file>
 
-* Reset commits (soft: keep changes staged)
+**Reset commits (soft: keep changes staged)**
 * git reset --soft HEAD~
 
-* Reset commits (mixed: keep working changes)
+**Reset commits (mixed: keep working changes)**
 * git reset --mixed HEAD~
 
-* Reset commits (hard: delete all changes)
+**Reset commits (hard: delete all changes)**
 * git reset --hard HEAD~
 
-* Undo a commit with a new commit
+**Undo a commit with a new commit**
 * git revert <commit-id>
 
-* Remove untracked files
+**Remove untracked files**
 * git clean -f
 
-* Remove untracked files + folders
+**Remove untracked files + folders**
 * git clean -fd
 
 ✅ 7. Remote Commands
 ---------------------
-* Add a remote repo
+**Add a remote repo**
 * git remote add origin <url>
 
-* Remove remote
+**Remove remote**
 * git remote remove origin
 
-* Rename remote
+**Rename remote**
 * git remote rename origin neworigin
 
 ✅ 8. Tagging Commands
 ----------------------
-* List all tags
+**List all tags**
 * git tag
 
-* Create a tag
+**Create a tag**
 * git tag <tag-name>
 
-* Create an annotated tag
+**Create an annotated tag**
 * git tag -a <tag-name> -m "message"
 
-* Push a single tag
+**Push a single tag**
 * git push origin <tag-name>
 
-* Push all tags
+**Push all tags**
 * git push origin --tags
 
-* Delete tag
+**Delete tag**
 * git tag -d <tag-name>
 
 ✅ 9. Diff (Compare Changes)
 ----------------------------
-* Show unstaged changes
+**Show unstaged changes**
 * git diff
 
-* Show staged changes
+**Show staged changes**
 * git diff --staged
 
-* Compare two branches
+**Compare two branches**
 * git diff <branch1> <branch2>
 
-* Compare two commits
+**Compare two commits**
 * git diff <commit1> <commit2>
 
 ✅ 10. Cherry-Pick
 ------------------
-* Copy a commit from another branch
+**Copy a commit from another branch**
 * git cherry-pick <commit-id>
 
-* Continue cherry-pick after fixing conflicts
+**Continue cherry-pick after fixing conflicts**
 * git cherry-pick --continue
 
-* Abort cherry-pick
+**Abort cherry-pick**
 * git cherry-pick --abort
 
 ✅ 11. Git Configuration
 ------------------------
-* Set username
+**Set username**
 * git config --global user.name "<name>"
 
-* Set email
+**Set email**
 * git config --global user.email "<email>"
 
-* Show all config
+**Show all config**
 * git config --list
 
 
