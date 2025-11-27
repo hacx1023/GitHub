@@ -9,8 +9,8 @@ Setting Up Code Repository in GITHUB:
 4. Choose Public.
 5. Create Repository
 
-Install & COnfigure Git:
----------------------------------------
+Install & Configure Git:
+------------------------
 $sudo su
 $yum update -y
 $yum install git -y
@@ -18,5 +18,13 @@ $git --version
 $git config --global user.name "<region_specific_username>"
 $git config --global user.email "<emailID>"
 $git config --list
+
+Workflow of Git:
+------------------------
+
+<img width="800" height="568" alt="image" src="https://github.com/user-attachments/assets/ea01b82f-47f3-40da-ac04-2ee8d36aa305" />
+
+
+
 
 
