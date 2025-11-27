@@ -15,8 +15,9 @@ sudo su
 yum update -y
 yum install git -y
 git --version
+
 git config --global user.name "<region_specific_username>"
-git config --global user.email "<emailID>"
+git config --global user.email "<your_email@example.com>"
 git config --list
 
 Workflow of Git:
