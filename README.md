@@ -369,9 +369,11 @@ Show all config**
 
 **Git ignore**
 --------------
-Sometimes we dont want to commit some type of files 
-We can ignore the files while committing 
-we use git ignore process 
+```
+.gitignore tells Git which files to ignore.
+It stops unwanted files from being added or committed.
+```
+
 **Steps :**
 -----------
 1. Create a file " .gitignore "
@@ -379,7 +381,8 @@ we use git ignore process
 3. Add and commit .gitignore file 
 4. Create some files with extensions you dont want to commit 
 5. Run git add . command to confirm if git ignore works or not.
-	
+
+```
 Ex:
 		1. nano .gitignore 
 			<inside .gitignore file put the filenames pattern to ignore those files>
@@ -387,18 +390,23 @@ Ex:
 			*.bin 
 			*.txt
 			*.tests
-		2. Save the file and commit this file 
-		3. git add .gitignore 
+
+		2. Save the file and commit this file
+
+		3. git add .gitignore
+
 		4. git commit -m "ignore file added"
-```		5. create some class files, bin files and some text files and try to add them
-touch file{1,2,3}.{class,bin,txt,tests,java,py}
-this command will create 5 class,bin,txt,tests,java,py files 
+
+		5. create some class files, bin files and some text files and try to add them. (touch file{1,2,3}.{class,bin,txt,tests,java,py} this command will create 5 class,bin,txt,tests,java,py files
+
 		6. add all these files at once and check the working of gitignore 
 			$git add .
+
 		7. Check status 
-			$git status 
-			
+			$git status
+
 		8. You should see only java and py files are staged and they only will
 			be eligible for commit.
+```
 
 
