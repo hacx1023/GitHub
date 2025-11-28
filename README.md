@@ -429,7 +429,6 @@ To switch branch
 git checkout <branchname_you_want_to_goto>
 ```
 
-
 * Create some new files and check the status and files in both branches
 * To commit the changes to particular branch, 
 * Be in that branch and commit.
@@ -442,3 +441,22 @@ git checkout <branchname_you_want_to_goto>
 * When you do git branch, the same working copy of current branch is copied to new branch and now onwards whatever you do in this new branch will be personal to this branch.
 * The new branch will contain all the previous work and your new work. 
 * NEW BRANCH = PARENT_BRANCH_COPY + NEW_WORK 
+
+**Git MERGE :**
+---------------
+1. when we are done finishing our work on any new feature, we need to merge to master or production branch.
+2. To merge any branch to any other branch :
+	- be in the recieving branch 
+	- run the command :
+```
+git merge <source_branch_name>
+```
+3. Verify the merge
+```
+git log
+``` 
+4. Push to central repo
+```
+git push origin master
+``` 
+6. This will merge your new branch with current branch (can be master or any other branch)
