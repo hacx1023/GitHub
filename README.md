@@ -460,3 +460,24 @@ git log
 git push origin master
 ``` 
 6. This will merge your new branch with current branch (can be master or any other branch)
+
+**Git Conflict**
+----------------
+When same file having different content in different branches, if you do merge, then conflict occurs.
+
+In this case you need to resolve the conflict and add and commit again.
+
+Remember : conflict occurs during "merging" process.
+				when we do git merge or git pull, conflict occurs.
+
+**How to resolve git conflict?**
+-------------------------------
+1. Check which file has a merge conflict
+```
+git status 
+```
+2. Open the file 
+	- Decide what content to keep 
+	- Remove other content which is not required
+3.  Add and Commit 
+				
